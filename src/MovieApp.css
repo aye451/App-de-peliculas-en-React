@@ -95,3 +95,20 @@ button:hover{
 .movie-description {
     max-width: 600px; /* Ajusta el tamaño del contenedor de la descripción */
 }
+
+@media (max-width: 768px) {
+    .movie-content {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; 
+    }
+
+    .movie-poster {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+        margin-bottom: 20px; /* Añade un margen inferior para separar la imagen de la descripción */
+    }
+
+    .movie-description {
+        max-width: 100%; /* Permite que la descripción ocupe el ancho completo en pantallas más pequeñas */
+    }
+}
