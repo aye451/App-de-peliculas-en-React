@@ -1,0 +1,97 @@
+.container{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color:blueviolet ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: 0.5s all ease;
+}
+
+button:hover{
+    background-color: rgb(154, 87, 216);
+}
+
+.movie-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card{
+    background-color: rgb(145, 92, 194);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    display: flex; /*Asegura que los elementos dentro de .movie-card se apilen verticalmente y que el contenedor se ajuste según su contenido.*/
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto; /*Elimina cualquier restricción de altura, permitiendo que el contenedor crezca según el tamaño del contenido.*/
+}
+.movie-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.movie-card h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.movie-card p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: -webkit-box; /* Para compatibilidad con WebKit */
+    -webkit-line-clamp: 3; /* Número máximo de líneas (prefijo WebKit) */
+    line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    box-orient: vertical; 
+    text-overflow: ellipsis; 
+}
+/*MODIFICADO*/
+.movie-details {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-content {
+    display: flex;
+    align-items: flex-start;
+}
+  
+.movie-poster {
+    max-width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+  
+.movie-description {
+    max-width: 600px; /* Ajusta el tamaño del contenedor de la descripción */
+}
